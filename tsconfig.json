@@ -5,7 +5,7 @@
     "esModuleInterop": true,
     "module": "commonjs",
     "strictNullChecks": false,
-    "types": ["node"],
+    "types": ["codeceptjs","node"],
     "declaration": true,
     "outDir": "./dist",
     "baseUrl": "./"
