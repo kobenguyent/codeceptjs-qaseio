@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/PeterNgTr/codeceptjs-qaseio.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "codeceptJS",
     "codeceptjs",
