@@ -1,5 +1,5 @@
 {
-  "name": "codeceptjs-qaseio",
+  "name": "codeceptjs-qase",
   "version": "1.0.0",
   "description": "CodeceptJS plugin for Qaseio",
   "main": "dist/index.js",
