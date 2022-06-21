@@ -90,7 +90,8 @@ plugins: {
         apiKey: "your api token",
         projectName: process.env.QASE_PROJECT_NAME,
         enabled: process.env.QASE_REPORT || false,
-        runId: process.env.TEST_RUN_ID
+        runId: process.env.TEST_RUN_ID, 
+        testRunTags: ['smoke-tests']
     }
 }
 ...

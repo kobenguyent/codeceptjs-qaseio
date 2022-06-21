@@ -63,9 +63,10 @@ module.exports = (config) => {
 		}
 	}
 
-	async function _addTestRun(projectName:string, runName:string, cases: Array<number>, description: string) {
+	async function _addTestRun(projectName:string, runName:string, cases: Array<number>, description: string, testRunTags?: Array<string>) {
 		try {
-			const res = await qase.runs.create(projectName, new RunCreate(runName, cases, { description }));
+			// @ts-ignore
+			const res = await qase.runs.create(projectName, new RunCreate(runName, cases, { description, tags: testRunTags }));
 			return res.data.id;
 		} catch (error) {
 			console.log(`Cannot create new test run due to ${JSON.stringify(error)}`);
@@ -138,12 +139,12 @@ module.exports = (config) => {
 				if (existingRuns.length > 0 ) {
 					for (const run of existingRuns) {
 						if (run.title !== runName) {
-							runId = await _addTestRun(config.projectName, runName, ids, config.description);
+							runId = await _addTestRun(config.projectName, runName, ids, config.description, config.testRunTags);
 							break;
 						}
 					}
 				} else {
-					runId = await _addTestRun(config.projectName, runName, ids, config.description);
+					runId = await _addTestRun(config.projectName, runName, ids, config.description, config.testRunTags);
 				}
 			}
 
