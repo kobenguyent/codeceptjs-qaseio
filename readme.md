@@ -86,7 +86,7 @@ Add this plugin to config file:
 ...
 plugins: {
     qase: {
-        require: "codeceptjs-qaseio", 
+        require: "codeceptjs-qase", 
         apiKey: "your api token",
         projectName: process.env.QASE_PROJECT_NAME,
         enabled: process.env.QASE_REPORT || false,
