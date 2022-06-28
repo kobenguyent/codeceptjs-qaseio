@@ -10,7 +10,7 @@ Qaseio integration with CodeceptJS. The test run is created automatically after 
 To use this custom plugin
 
 ```sh
-npm i codeceptjs-qaseio --save
+npm i codeceptjs-qase --save
 ```
 
 **Note:**
