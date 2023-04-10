@@ -2,7 +2,7 @@
 
 ##### Qase TSM
 
-Qaseio integration with CodeceptJS. The test run is created automatically after the  test execution.
+Qase integration with CodeceptJS. The test run is created automatically after the test execution.
 
 
 ##### Requirement
@@ -79,7 +79,7 @@ A Gherkin example:
 
 ##### Configuration
 
-Add this plugin to CodeceptJS config file:
+Adding this plugin to CodeceptJS config file:
   
 ```js
 ...
