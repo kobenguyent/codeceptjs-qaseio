@@ -2,12 +2,12 @@
 
 ##### Qase TSM
 
-Qaseio integration with CodeceptJS. The test run is created automatically after the execution.
+Qaseio integration with CodeceptJS. The test run is created automatically after the  test execution.
 
 
 ##### Requirement
 
-To use this custom plugin
+To use this plugin
 
 ```sh
 npm i codeceptjs-qase --save
@@ -35,7 +35,7 @@ An example:
 
 **Data driven tests**
 
-If you want to have different Data-driven test cases with different IDs in Testrail for each iteration of the test you will need to populate the Data object with your a tag. This works because CodeceptJS extracts tags from test names, and data for Data-driven tests is populated in the test name.
+If you want to have different Data-driven test cases with different IDs in Qase for each iteration of the test you will need to populate the Data object with your a tag. This works because CodeceptJS extracts tags from test names, and data for Data-driven tests is populated in the test name.
 
 An example:
 
@@ -64,8 +64,7 @@ A Gherkin example:
     Then I see search textbox
     And I see search button
 ```
-**Note:**
-TestRail tag in **Examples** from **Scenario Outline** available from version `1.7.4` and above
+
 ```gherkin
   @someTag
   Scenario Outline: Fill some field
@@ -80,7 +79,7 @@ TestRail tag in **Examples** from **Scenario Outline** available from version `1
 
 ##### Configuration
 
-Add this plugin to config file:
+Add this plugin to CodeceptJS config file:
   
 ```js
 ...
